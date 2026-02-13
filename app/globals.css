@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system: soft, warm, minimal – less AI, more human */
+@layer base {
+  :root {
+    /* Warm off-whites and soft grays */
+    --background: 40 20% 98%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    /* Primary = black, Accent = warm orange from design system */
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 100%;
+    --accent-hex: #FF6B00;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 13%;
+    --radius: 0.5rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --shadow-soft-hover: 0 12px 28px rgba(0, 0, 0, 0.08);
+    --transition-default: 0.3s ease;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 24 100% 50%;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-soft-hover: 0 12px 28px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}

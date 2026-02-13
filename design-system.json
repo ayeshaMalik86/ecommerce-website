@@ -1,0 +1,141 @@
+{
+  "design_system": {
+    "name": "E-Commerce Gallery Interface",
+    "version": "1.0.0",
+    "description": "Design system for a curated e-commerce website showcase platform"
+  },
+  "colors": {
+    "primary": {
+      "background": "#FFFFFF",
+      "text": "#000000",
+      "accent": "#FF6B00"
+    },
+    "secondary": {
+      "light_gray": "#F5F5F5",
+      "medium_gray": "#E0E0E0",
+      "dark_gray": "#333333"
+    },
+    "buttons": {
+      "primary_bg": "#000000",
+      "primary_text": "#FFFFFF",
+      "secondary_bg": "#FFFFFF",
+      "secondary_border": "#000000"
+    },
+    "cards": {
+      "background_1": "#8B6F47",
+      "background_2": "#A8D5BA",
+      "background_3": "#87CEEB"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "primary": "system-ui, -apple-system, sans-serif",
+      "headings": "sans-serif"
+    },
+    "sizes": {
+      "heading_large": "24px",
+      "heading_medium": "18px",
+      "body": "14px",
+      "small": "12px",
+      "navigation": "14px"
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "layout": {
+    "container": {
+      "max_width": "1440px",
+      "padding": "0 24px"
+    },
+    "grid": {
+      "columns": 3,
+      "gap": "24px",
+      "responsive_breakpoints": {
+        "mobile": "1 column",
+        "tablet": "2 columns",
+        "desktop": "3 columns"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px"
+    }
+  },
+  "components": {
+    "header": {
+      "height": "72px",
+      "background": "#FFFFFF",
+      "elements": ["logo", "navigation_menu", "search_bar", "auth_buttons", "cta_button"]
+    },
+    "navigation": {
+      "items": ["Explore", "Directory", "Academy (New)", "Jobs", "Market"],
+      "style": "horizontal",
+      "spacing": "24px"
+    },
+    "filter_bar": {
+      "background": "#F5F5F5",
+      "border_radius": "8px",
+      "filters": ["Awards", "Category", "Tag", "Technology", "Country", "Font", "Color"],
+      "filter_style": "dropdown_buttons"
+    },
+    "website_card": {
+      "aspect_ratio": "4:3",
+      "border_radius": "12px",
+      "shadow": "0 4px 12px rgba(0,0,0,0.1)",
+      "hover_effect": "lift_and_shadow",
+      "elements": {
+        "preview_image": "full_width",
+        "title": "bottom_overlay",
+        "badge": "pro_indicator"
+      }
+    },
+    "buttons": {
+      "primary": {
+        "background": "#000000",
+        "color": "#FFFFFF",
+        "border_radius": "8px",
+        "padding": "12px 24px",
+        "font_weight": 600
+      },
+      "secondary": {
+        "background": "#FFFFFF",
+        "color": "#000000",
+        "border": "1px solid #000000",
+        "border_radius": "8px",
+        "padding": "12px 24px"
+      }
+    }
+  },
+  "interactions": {
+    "hover_states": {
+      "cards": "scale(1.02) + shadow",
+      "buttons": "opacity(0.8)",
+      "links": "underline"
+    },
+    "transitions": {
+      "default": "all 0.3s ease",
+      "fast": "all 0.15s ease"
+    }
+  },
+  "branding": {
+    "logo": "W.",
+    "tagline": "Watch all courses for just $12/month - The Creative Pass",
+    "style": "minimal_modern"
+  },
+  "content_structure": {
+    "page_header": {
+      "count": "48K Websites",
+      "category": "E-Commerce (6,144)",
+      "description": "Best selection of E-Commerce Website examples for your inspiration"
+    },
+    "view_options": ["grid_view", "list_view"]
+  }
+}
